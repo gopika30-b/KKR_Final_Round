@@ -1,62 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
-  box-sizing: border-box;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter';
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
 
 }
 
 /* NavBar */
 header .navigation {
-background-color: #F5F5F5;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  min-width: 100%;
-  height: 70px;
-  z-index: 100;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    min-width: 100%;
+    height: 70px;
+    z-index: 100;
 }
 
 header .navigation .menu-list {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 60%;
-  margin: auto 0px auto 30%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: auto 0px auto 30%;
 }
 
 header .navigation .menu-list li a {
-  position: relative;
-  color: #000;
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: color 1s ease, border 1s ease;
-  text-decoration: none;
-  padding-bottom: 5px;
+    position: relative;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 1s ease, border 1s ease;
+    text-decoration: none;
+    padding-bottom: 5px;
 }
 
 header .navigation .menu-list li a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #000;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.3s ease;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
 }
 
 header .navigation .menu-list li a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 
@@ -80,11 +80,12 @@ header .navigation .menu-list li a:hover::after {
     padding-bottom: 0%;
 }
 
-#heroPage .main .image{
+#heroPage .main .image {
     flex: 1;
     text-align: right;
 }
-#heroPage .main .image img{
+
+#heroPage .main .image img {
     max-width: 65%;
 }
 
@@ -93,16 +94,16 @@ header .navigation .menu-list li a:hover::after {
     text-align: left;
     font-size: 25px;
 }
-  
+
 #heroPage .sub {
     text-align: center;
     padding-bottom: 20px;
     font-weight: 700;
-    text-shadow: 
-                1px 1px 10px rgb(115, 38, 115,0.3),
-                1px -1px 10px rgb(115, 38, 115,0.3),
-                -1px 1px 10px rgb(115, 38, 115,0.3),
-                -1px -1px 10px rgb(115, 38, 115,0.3);
+    text-shadow:
+        1px 1px 10px rgb(115, 38, 115, 0.3),
+        1px -1px 10px rgb(115, 38, 115, 0.3),
+        -1px 1px 10px rgb(115, 38, 115, 0.3),
+        -1px -1px 10px rgb(115, 38, 115, 0.3);
 }
 
 
@@ -175,7 +176,7 @@ header .navigation .menu-list li a:hover::after {
 }
 
 #services .services .service .head {
-    color: #8bc34a; 
+    color: #8bc34a;
     font-weight: bold;
     margin-bottom: 10px;
     background-color: #000;
@@ -216,6 +217,7 @@ header .navigation .menu-list li a:hover::after {
     right: 10%;
 }
 
+
 /* About Us Pgae */
 #aboutPage {
     height: 100vh;
@@ -232,9 +234,11 @@ header .navigation .menu-list li a:hover::after {
     font-size: 24px;
     font-weight: bold;
 }
-#aboutPage .title p{
+
+#aboutPage .title p {
     color: #fff;
 }
+
 #aboutPage .content {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -270,7 +274,8 @@ header .navigation .menu-list li a:hover::after {
     margin: 5px 0;
     color: #7cb342;
 }
-#aboutPage .head .first{
+
+#aboutPage .head .first {
     color: white;
 }
 
@@ -286,7 +291,7 @@ header .navigation .menu-list li a:hover::after {
 
 #aboutPage .btn button {
     padding: 10px 20px;
-    background-color: #7cb342; 
+    background-color: #7cb342;
     color: white;
     border: none;
     border-radius: 5px;
@@ -350,7 +355,7 @@ header .navigation .menu-list li a:hover::after {
 #workshop .content button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #7cb342; 
+    background-color: #7cb342;
     color: white;
     border: none;
     border-radius: 5px;
@@ -378,12 +383,14 @@ header .navigation .menu-list li a:hover::after {
     box-sizing: border-box;
     padding: 50px;
 }
-#shop .content{
+
+#shop .content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
+
 #shop .head {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -464,7 +471,7 @@ header .navigation .menu-list li a:hover::after {
 
 #shop .btn button {
     padding: 10px 20px;
-    background-color: #7cb342; 
+    background-color: #7cb342;
     color: white;
     border: none;
     border-radius: 5px;
@@ -503,31 +510,35 @@ header .navigation .menu-list li a:hover::after {
     box-sizing: border-box;
 }
 
-#community .left, #community .right {
+#community .left,
+#community .right {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
 }
-#community .right{
+
+#community .right {
     align-items: flex-end;
 }
 
-#community .left img, #community .right img {
+#community .left img,
+#community .right img {
     max-width: 50%;
     height: auto;
     margin-bottom: 20px;
 }
 
 
-#community .left p, #community .right p {
-    text-align: right; 
+#community .left p,
+#community .right p {
+    text-align: right;
     font-size: 20px;
     font-weight: 700;
 }
 
-#community .right p{
+#community .right p {
     color: #505050;
     font-size: 17px;
 }
@@ -561,9 +572,9 @@ header .navigation .menu-list li a:hover::after {
     justify-content: space-between;
     background-color: #F5F5F5;
     position: relative;
-  }
-  
-  #footer .connect {
+}
+
+#footer .connect {
     background-color: black;
     color: #7cb342;
     width: 50%;
@@ -577,29 +588,29 @@ header .navigation .menu-list li a:hover::after {
     top: -50px;
     z-index: 1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  #footer .connect p {
+}
+
+#footer .connect p {
     margin: 0;
     font-size: 30px;
-  }
-  
-  #footer .connect .nl {
+}
+
+#footer .connect .nl {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 5px;
-  }
-  
-  #footer .connect .nl input[type="email"] {
+}
+
+#footer .connect .nl input[type="email"] {
     padding: 10px;
     width: 250px;
     border: none;
     border-radius: 5px;
     outline: none;
-  }
-  
-  #footer .connect .nl button {
+}
+
+#footer .connect .nl button {
     padding: 10px 20px;
     width: 250px;
     background-color: #7cb342;
@@ -608,9 +619,9 @@ header .navigation .menu-list li a:hover::after {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  #footer .main {
+}
+
+#footer .main {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -621,62 +632,151 @@ header .navigation .menu-list li a:hover::after {
     position: relative;
     top: 50px;
     z-index: 0;
-  }
-  
-  #footer .main .head {
+}
+
+#footer .main .head {
     font-weight: bold;
     color: black;
-  }
-  
-  #footer .main .head .name {
+}
+
+#footer .main .head .name {
     color: #000;
     font-size: 30px;
     line-height: 1.5;
-  }
-  
-  #footer .main .head .slogan {
+}
+
+#footer .main .head .slogan {
     font-weight: lighter;
     font-size: 14px;
     padding-bottom: 20px;
-  }
-  
-  #footer .main p {
+}
+
+#footer .main p {
     margin: 5px 0;
     color: gray;
-  }
-  
-  #footer .socail {
+}
+
+#footer .socail {
     display: flex;
     flex-direction: row;
     gap: 3px;
-  }
-  
-  #footer .socail a {
+}
+
+#footer .socail a {
     color: gray;
     margin: 0 5px;
     transition: color 0.3s ease;
     font-size: larger;
-  }
-  
-  #footer .socail a:hover {
+}
+
+#footer .socail a:hover {
     color: black;
-  }
-  
-  #footer .footer {
+}
+
+#footer .footer {
     text-align: center;
     padding: 10px;
     color: #505050;
     width: 100%;
     padding-bottom: 60px;
     font-size: 14px;
-  }
-  
-  #footer .main .company, #footer .main .help, #footer .main .faq, #footer .main .res{
+}
+
+#footer .main .company,
+#footer .main .help,
+#footer .main .faq,
+#footer .main .res {
     display: flex;
     flex-direction: column;
     font-size: small;
-  }
-  
-  #footer .main .company .head, #footer .main .help .head, #footer .main .faq .head, #footer .main .res .head{
+}
+
+#footer .main .company .head,
+#footer .main .help .head,
+#footer .main .faq .head,
+#footer .main .res .head {
     padding-bottom: 10px;
-  }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideIn 2s ease forwards;
+}
+
+.slide-in-bottom {
+    animation: slideInFromBottom 2s ease forwards;
+}
+
+.slide-in-left {
+    animation: slideInFromLeft 2s ease forwards;
+}
+
+.slide-in-right {
+    animation: slideInFromRight 2s ease forwards;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.hidden-bottom {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.hidden-left {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.hidden-right {
+    opacity: 0;
+    transform: translateX(100%);
+}
