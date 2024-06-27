@@ -273,12 +273,12 @@ header .navigation .menu-list li a:hover::after {
   box-sizing: border-box;
   text-align: center;
   width: 30%;
-  transition: transform 0.3s ease; /* Add transition for smooth effect */
+  transition: transform 0.3s ease; 
 }
 
-/* Hover effect to zoom in */
+
 #team .mem:hover {
-  transform: scale(1.1); /* Adjust the scale value for the desired zoom level */
+  transform: scale(1.1); 
 }
 
 
