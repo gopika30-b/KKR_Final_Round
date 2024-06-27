@@ -97,6 +97,12 @@ header .navigation .menu-list li a:hover::after {
 #heroPage .sub {
     text-align: center;
     padding-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 
+                1px 1px 10px rgb(115, 38, 115,0.3),
+                1px -1px 10px rgb(115, 38, 115,0.3),
+                -1px 1px 10px rgb(115, 38, 115,0.3),
+                -1px -1px 10px rgb(115, 38, 115,0.3);
 }
 
 
@@ -291,7 +297,7 @@ header .navigation .menu-list li a:hover::after {
 
 /* Worshop Page */
 #workshop {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -301,7 +307,7 @@ header .navigation .menu-list li a:hover::after {
 
 #workshop .title {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 20px;
     font-size: 24px;
     font-weight: bold;
 }
@@ -315,6 +321,7 @@ header .navigation .menu-list li a:hover::after {
     padding: 0 100px;
     box-sizing: border-box;
     gap: 200px;
+    margin-bottom: 70px;
 }
 
 #workshop .content {
@@ -353,14 +360,13 @@ header .navigation .menu-list li a:hover::after {
 }
 
 #workshop .image {
-    max-width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #workshop .image img {
-    max-width: 100%;
+    max-width: 150%;
     height: auto;
 }
 
@@ -379,7 +385,7 @@ header .navigation .menu-list li a:hover::after {
     justify-content: space-evenly;
 }
 #shop .head {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
 }
@@ -465,3 +471,212 @@ header .navigation .menu-list li a:hover::after {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+/* Community Page */
+#community {
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#community .title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#community .title p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#community .main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#community .left, #community .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+#community .right{
+    align-items: flex-end;
+}
+
+#community .left img, #community .right img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+#community .left p, #community .right p {
+    text-align: right; 
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#community .right p{
+    color: #505050;
+    font-size: 17px;
+}
+
+#community .right .bold {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 20px;
+}
+
+#community .left button {
+    padding: 10px 25px;
+    background-color: #7cb342;
+    color: white;
+    border: none;
+    font-size: 19px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Footer Page */
+#footer {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    position: relative;
+  }
+  
+  #footer .connect {
+    background-color: black;
+    color: #7cb342;
+    width: 50%;
+    padding: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: -50px;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #footer .connect p {
+    margin: 0;
+    font-size: 30px;
+  }
+  
+  #footer .connect .nl {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  #footer .connect .nl input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  #footer .connect .nl button {
+    padding: 10px 20px;
+    width: 250px;
+    background-color: #7cb342;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #footer .main {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 90px 30px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+    position: relative;
+    top: 50px;
+    z-index: 0;
+  }
+  
+  #footer .main .head {
+    font-weight: bold;
+    color: black;
+  }
+  
+  #footer .main .head .name {
+    color: #000;
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  
+  #footer .main .head .slogan {
+    font-weight: lighter;
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  
+  #footer .main p {
+    margin: 5px 0;
+    color: gray;
+  }
+  
+  #footer .socail {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+  }
+  
+  #footer .socail a {
+    color: gray;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+    font-size: larger;
+  }
+  
+  #footer .socail a:hover {
+    color: black;
+  }
+  
+  #footer .footer {
+    text-align: center;
+    padding: 10px;
+    color: #505050;
+    width: 100%;
+    padding-bottom: 60px;
+    font-size: 14px;
+  }
+  
+  #footer .main .company, #footer .main .help, #footer .main .faq, #footer .main .res{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+  }
+  
+  #footer .main .company .head, #footer .main .help .head, #footer .main .faq .head, #footer .main .res .head{
+    padding-bottom: 10px;
+  }
