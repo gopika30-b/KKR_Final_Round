@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     const servicesSection = document.querySelector('#services');
     const aboutSection = document.querySelector('#aboutPage');

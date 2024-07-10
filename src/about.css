@@ -59,6 +59,29 @@ header .navigation .menu-list li a:hover::after {
   transform-origin: bottom left;
 }
 
+@media (max-width: 768px){
+  header .navigation {
+      position: fixed;
+      width: 100vw;
+  }
+  
+  header .navigation .menu-list {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: auto 5% auto 5%;
+  }
+  
+  header .navigation .menu-list li a {
+      position: relative;
+      color: #000;
+      font-size: 0.7rem;
+  }
+}
+
+
 /* Hero Page */
 #heroPage {
   display: flex;
@@ -87,6 +110,22 @@ header .navigation .menu-list li a:hover::after {
   margin-top: 20px;
   font-size: large;
   transition: background-color 0.3s ease;
+}
+
+@media (max-width: 786px){
+  #heroPage {
+    height: auto;
+    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    margin: 40px;
+    margin-top: 0px;
+    padding-top: 40px;
+  }
+  #heroPage p.main {
+    margin-top: 70px;
+  }
 }
 
 /* Goals Page */
@@ -164,6 +203,46 @@ header .navigation .menu-list li a:hover::after {
   transform: scaleX(-1);
 }
 
+@media (max-width : 786px){
+  #goals {
+    height: auto;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #goals .vision,
+  #goals .mission {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+  
+  #goals .vision .content,
+  #goals .mission .content {
+    max-width: 90%;
+  }
+  
+  #goals .vision .gif,
+  #goals .mission .gif {
+    max-width: 50%;
+  }
+  
+  #goals .content .title {
+    margin-top: 10px;
+  }
+  
+  #goals hr {
+    margin: 10px;
+  }
+  
+  #goals .mission .gif {
+    transform: scaleX(1);
+  }
+}
+
 /* Values Page */
 #values {
   height: 100vh;
@@ -229,6 +308,48 @@ header .navigation .menu-list li a:hover::after {
   margin: 0;
 }
 
+@media (max-width: 786px){
+  #values{
+    height: auto;
+    min-height: 100vh;
+  }
+  #values .content {
+    max-width: 85%;
+  }
+  
+  #values .blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+  }
+  
+  #values .block {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 70%;
+  }
+  
+  #values .block img {
+    max-width: 15%;
+    margin-bottom: 2px;
+  }
+  
+  #values .block .head {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  
+  #values .block p {
+    line-height: 1;
+  }
+}
 /* Members Page */
 #team {
   height: 100vh;
@@ -321,6 +442,39 @@ header .navigation .menu-list li a:hover::after {
   text-align: left;
   margin-bottom: 10px;
 }
+@media (max-width: 786px){
+  #team{
+    height: auto;
+    margin-top: 70px;
+  }
+  #team p {
+    padding: 0px 30px;
+  }
+  #team .mems {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  #team .mem {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 60%;
+    transition: transform 0.3s ease; 
+  }
+  #team .mem .main p {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+    padding: 0px;
+  }
+}
 
 /* Join Us Page */
 #join {
@@ -367,6 +521,19 @@ header .navigation .menu-list li a:hover::after {
 
 #join .content button:hover {
   background-color: #333;
+}
+@media (max-width: 786px){
+  #join {
+    height: auto;
+    margin: 40px;
+    margin-bottom: 100px;
+  }
+  
+  #join .content {
+    border-radius: 50px;
+    box-sizing: border-box;
+    width: 100%;
+  }
 }
 
 /* Footer Page */
@@ -496,6 +663,76 @@ header .navigation .menu-list li a:hover::after {
 
 #footer .main .company .head, #footer .main .help .head, #footer .main .faq .head, #footer .main .res .head{
   padding-bottom: 10px;
+}
+@media (max-width: 768px){
+  #footer {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #F5F5F5;
+      position: relative;
+      margin-top: 30px;
+  }
+  
+  #footer .connect {
+      width: 90%;
+      flex-direction: column;
+      gap: 20px;
+      padding: 15px;
+  }
+  
+  #footer .connect p {
+      font-size: 25px;
+  }
+  
+  #footer .connect .nl {
+      gap: 8px;
+  }
+  
+  #footer .connect .nl input[type="email"], #footer .connect .nl button {
+      width: 300px;
+  }
+  
+  #footer .main {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 90px 30px;
+      padding-bottom: 40px;
+      box-sizing: border-box;
+      background-color: #F5F5F5;
+      position: relative;
+      top: 50px;
+      z-index: 0;
+  }
+  
+  #footer .main .head {
+      font-weight: bold;
+      color: black;
+  }
+  
+  #footer .main .head .name {
+      color: #000;
+      font-size: 29px;
+      line-height: 1;
+  }
+  
+  #footer .footer {
+      text-align: center;
+      padding: 30px;
+      color: #505050;
+      width: 100%;
+      font-size: 13px;
+  }
+  
+  #footer .main .company,
+  #footer .main .help,
+  #footer .main .faq,
+  #footer .main .res {
+      display: none;
+  }
 }
 
 
